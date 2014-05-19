@@ -2,6 +2,15 @@ Attempting to Face Squiggle
 
 My selfies are boring; I want the computer to get involved.
 
-Using SimpleCV 
+Using SimpleCV & Python
 
+5/10/14
+
+Changed funcitonality:
+
+-computer writes face on detected faces
+-computer marks interesting pixels (usually edges/vertices)
+
+
+progress pics at http://sampanter.com/selfie
 
