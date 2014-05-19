@@ -55,7 +55,7 @@ def facesquiggle(pic):
 		blue = randint(1,255)
 		c.draw((red, green, blue))
 
-	points = pic.findFeatures("szeliski", 1000)
+	points = pic.findFeatures("harris", 500)
 	for p in points:
 		red = randint(1,255)
 		green = randint(1,255)
@@ -64,9 +64,13 @@ def facesquiggle(pic):
 		pointy = p.y
 		p.draw((red,green,blue))	
 
+	savestring = str(sys.argv[1])
+	savestring = savestring.lstrip('cv_two/selfie')
+	savestring = "selfie%s" % (savestring)
 
-	pic.save("cv_1/%s" % (sys.argv[1]))
-	
+
+	pic.save("cv_three/%s" % (savestring))
+	print "Finished turning %s into %s" % (sys.argv[1],savestring)
 
 
 
